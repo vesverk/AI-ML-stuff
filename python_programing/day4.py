@@ -22,3 +22,5 @@ numbers = [1, 2, 2, 3, 4, 4, 5, 1]
 
 print("Original List:", numbers)
 print("Result:", reverse_and_remove_duplicates(numbers))
+
+
