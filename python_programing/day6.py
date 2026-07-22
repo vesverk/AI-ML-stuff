@@ -1,39 +1,39 @@
-# #file handlaing
+#file handlaing
 
-# # import os
-
-
-# # with open("sample.txt" , "r") as file:
-# #     content = file.read()
-# #     print(content)
+# import os
 
 
-# # with open("sample1.txt" , "w") as file:
-# #     file.write("hello world")
-# #     file.writelines(["aline" , "bob"])
+# with open("sample.txt" , "r") as file:
+#     content = file.read()
+#     print(content)
 
 
-# # with ensure the file are proparly closed after the operation even an error occured
-
-# #exception handaling 
-# # try - expect block
-
-# try:
-#     with open("sample.txt" , "r") as file:
-#         content  = file.read()
-# except FileNotFoundError:
-#     print("file not found")
+# with open("sample1.txt" , "w") as file:
+#     file.write("hello world")
+#     file.writelines(["aline" , "bob"])
 
 
-# # ex 1:
-# def count_words(filename):
-#     try:
-#         with open(filename, "r") as file:
-#             lines = file.readline()
-#             line_count = len(lines)
-#             word_count = sum(len(line.split()) for line in lines)
-#     except FileNotFoundError:
-#         print("file not found") 
+# with ensure the file are proparly closed after the operation even an error occured
+
+#exception handaling 
+# try - expect block
+
+try:
+    with open("sample.txt" , "r") as file:
+        content  = file.read()
+except FileNotFoundError:
+    print("file not found")
+
+
+# ex 1:
+def count_words(filename):
+    try:
+        with open(filename, "r") as file:
+            lines = file.readline()
+            line_count = len(lines)
+            word_count = sum(len(line.split()) for line in lines)
+    except FileNotFoundError:
+        print("file not found") 
 
 
 #ex 2: write and read the list of item
