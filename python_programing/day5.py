@@ -33,3 +33,13 @@ def clean_test(text):
 input_text = " hello     world !!! welcome to java..."
 clened_Text = clean_test(input_text)
 print(clened_Text)
+
+
+#is string is palindrome
+
+def palindrome(text):
+    text = "".join(char.lower() for char in text if char.isalnum())
+    return text == text[::-1]
+
+
+
